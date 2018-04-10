@@ -1,0 +1,143 @@
+ .index_header {
+ 	width: 100%;
+ 	height: 498px;
+ 	background: url(../img/banner.png) no-repeat;
+ }
+ 
+ header {
+ 	background: url(../img/banner.png) no-repeat;
+ 	position: fixed;
+ 	top: 0;
+ }
+ 
+.main-content {
+	width: 100%;
+}
+
+.interview_content {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.news_list,
+.news_img_list {
+	display: block;
+	padding: 10px 0;
+	border-bottom: 1px solid #999;
+}
+
+.news_picture {
+	margin: 0;
+	width: 300px;
+	height: 180px;
+	overflow: hidden;
+}
+
+.news_text {
+	display: inline-block;
+	width: 880px;
+	height: 180px;
+	margin-left: 15px;
+}
+
+.news_text h3 {
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 16px;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	/** 对象作为伸缩盒子模型显示 **/
+	-webkit-box-orient: vertical;
+	/** 设置或检索伸缩盒对象的子元素的排列方式 **/
+	-webkit-line-clamp: 2;
+	/** 显示的行数 **/
+	overflow: hidden;
+	/** 隐藏超出的内容 **/
+}
+
+.news_text p {
+	font-size: 14px;
+	line-height: 2em;
+	color: #999999;
+	margin-bottom: 46px;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	/** 对象作为伸缩盒子模型显示 **/
+	-webkit-box-orient: vertical;
+	/** 设置或检索伸缩盒对象的子元素的排列方式 **/
+	-webkit-line-clamp: 2;
+	/** 显示的行数 **/
+	overflow: hidden;
+	/** 隐藏超出的内容 **/
+}
+
+.time {
+	width: 770px;
+	display: inline-block;
+}
+
+.look {
+	width: 100px;
+	display: inline-block;
+}
+
+.time img,
+.look img {
+	vertical-align: middle;
+	margin: 0;
+}
+
+.time .news_text_author {
+	display: inline-block;
+	width: 78px;
+	border-radius: 10px;
+	text-align: center;
+	border: 1px solid #127dea;
+	color: #127dea;
+	font-size: 12px;
+}
+
+.time span,
+.look span {
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.look .look_icon{
+margin-left: 18px;margin-right: 10px;	
+}
+.time .time_icon{
+	margin-left: 18px;margin-right: 10px;
+}
+.time .time_text,.look .time_text{
+	font-size: 12px;color: #999999;
+}
+.news_img_list .news_img {
+	width: 210px;
+	height: 191px;
+	overflow: hidden;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.blockchain_more {
+	height: 44px;
+	width: 1200px;
+	box-sizing: border-box;
+	line-height: 44px;
+	font-size: 16px;
+	color: #666666;
+	display: block;
+	text-align: center;
+	border: 1px solid #DDDDDD;
+	margin: 10px 0;
+}
+.advertising{
+	width: 1200px;height: 200px;border: 1px solid #DDDDDD;
+}

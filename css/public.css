@@ -1,0 +1,304 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+}
+
+
+/*头部样式*/
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 140px;
+	background: -webkit-linear-gradient(#4a8bee, #4ad3fa);
+}
+
+.header_logo {
+	width: 100%;
+	height: 71px;
+	border-bottom: 1px solid #a5d9fa;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 24px;
+}
+
+.search {
+	position: absolute;
+	height: 30px;
+	width: 220px;
+	;
+	background-color: #1e3f60;
+	margin-top: 24px;
+	margin-left: 68%;
+}
+
+.search div {
+	display: inline-block;
+	height: 30px;
+}
+
+.search_input {
+	width: 180px;
+}
+
+#app_code {
+	position: absolute;
+	top: 22px;
+	left: -15px;
+}
+
+.search_input input {
+	color: #FFFFFF;
+	display: block;
+	width: 100%;
+	height: 20px;
+	margin-top: 5px;
+	border: none;
+	border-right: 1px solid #fff;
+	background-color: #1e3f60;
+	text-indent: 1em;
+}
+
+input::placeholder {
+	font-size: 12px;
+}
+
+.search_img {
+	width: 40px;
+	float: right;
+	text-align: center;
+}
+
+.search_img img {
+	margin-top: 7px;
+	width: 16px;
+}
+
+.app_download {
+	position: absolute;
+	top: 20px;
+	height: 30px;
+	width: 110px;
+	margin-left: 83%;
+	color: #FFFFFF;
+	line-height: 30px;
+}
+
+.head_img {
+	position: absolute;
+	margin-left: 95%;
+	margin-top: 5px;
+	width: 60px;
+	height: 60px;
+}
+
+.head_img img {
+	width: 100%;
+	border-radius: 30px;
+}
+
+.header_nav {
+	height: 68px;
+	line-height: 68px;
+}
+
+.header_nav ul.all_nav {
+	margin-left: 24px;
+}
+
+ul li {
+	list-style: none;
+	float: left;
+}
+
+.nav li {
+	position: relative;
+}
+
+.header_nav ul li.active {
+	height: 68px;
+	background-color: #eabf3c;
+}
+
+.header_nav ul li:hover {
+	background-color: #eabf3c;
+}
+
+.header_nav ul li a {
+	display: block;
+	width: 100%;
+	height: 68px;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 0 20px;
+}
+
+.header_nav ul li:nth-of-type(1) a {
+	margin-left: 0;
+}
+
+.all_nav a img {
+	margin-top: 27px;
+	margin-right: 15px;
+}
+
+.sub_nav {
+	position: absolute;
+	width: 180px;
+	background-color: #080b0e;
+	top: 68px;
+}
+
+ul.sub_nav li {
+	position: relative;
+	text-indent: 8px;
+	float: none;
+	height: 55px;
+	line-height: 55px;
+	border-bottom: 1px solid #666666;
+}
+
+ul.sub_nav li:hover {
+	background-color: #333;
+}
+
+ul.sub_nav li a img {
+	margin-top: 14px;
+	margin-right: 10px;
+}
+
+ul.sub_nav li a .nav_right {
+	position: absolute;
+	margin-top: 20px;
+	right: 10px;
+}
+
+ul.sub_nav li .third_nav {
+	position: absolute;
+	left: 180px;
+	top: 0;
+}
+
+ul.sub_nav li .third_nav li {
+	width: 180px;
+	height: 56px;
+	background-color: #080b0e;
+	border: 1px solid #666666;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.personal_nav {
+	margin-left: -18px;
+	margin-top: -2px;
+	width: 90px;
+	height: 148px;
+	background-color: #17374a;
+	background: url(../img/personal_nav_bg.png) no-repeat;
+	padding-top: 8px;
+}
+
+.personal_nav li {
+	height: 35px;
+	width: 90px;
+}
+
+.personal_nav li a {
+	height: 35px;
+	line-height: 35px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+/*	底部样式*/
+
+footer {
+	width: 100%;
+	height: 280px;
+	background-color: #4a4a4a;
+}
+
+.content {
+	position: relative;
+	width: 1200px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.footer_title {
+	width: 100%;
+	height: 60px;
+	background-color: #323232;
+	color: #fff;
+}
+
+.footer-left {
+	float: left;
+	height: 60px;
+	width: 705px;
+}
+
+.footer-left li {
+	width: 235px;
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	font-size: 18px;
+}
+
+.footer-right {
+	float: right;
+	height: 60px;
+	width: 180px;
+}
+
+.footer-right li {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+
+li .code {
+	margin-top: 14px;
+}
+
+.weixin_code_img {
+	position: absolute;
+	top: -100px;
+	margin-left: -30px;
+	width: 90px;
+	height: 100px;
+}
+
+.footer_sub_nav li {
+	height: 48px;
+	line-height: 48px;
+}
+
+.footer_sub_nav a {
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+.copyright {
+	width: 62.5%;
+	margin: 0 auto;
+	margin-top: 162px;
+	height: 56px;
+	line-height: 56px;
+	border-top: 1px solid #999999;
+	color: #FFFFFF;
+}

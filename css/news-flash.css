@@ -1,0 +1,92 @@
+.main-content {
+			width: 100%;
+			padding-top: 140px;
+			padding-bottom: 100px;
+		}
+		
+		.interview_content {
+			width: 1200px;
+			margin: 0 auto;
+			background-color: #fff;
+			box-sizing: border-box;
+		}
+		
+		.news {
+			margin-top: 10px;
+		}
+        .news_flash_left{
+        	width: 790px;
+        }
+        .article p{
+        	margin-top: 42px;
+        	margin-bottom: 154px;
+        	font-size: 16px;
+        	color: #333;
+        	line-height: 2em;
+        }
+		.time,.author {
+			margin-top: 28px;
+			margin-right: 48px;
+			font-size: 16px;
+			color: #666666;
+			display: inline-block;
+		}
+		
+		
+		h5 {
+			color: #005ef0;
+			background-color: #cccccc;
+			text-indent: 20px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 18px;
+			margin-top: 10px;
+		}
+		.article{
+			margin-left: 65px;
+		}
+		h1 {
+			margin-top: 40px;
+			font-size: 30px;
+			color: #444444;
+		}
+		.origin,.origin a{
+			font-size: 14px;
+			color: #999;
+			margin-right: 10px;
+			
+		}
+		.origin a img{
+			margin: 0;
+		}
+		.origin{
+			height:32px;
+			line-height: 32px;
+		width: 40%;	
+		}
+		.comment_list_head_img{
+			width: 60px;
+			height: 60px;
+		}
+		.comment_list_text{
+			width: 690px;
+		}
+		.comment_list_text .time{
+			color: #333333;
+			margin:10px ;
+		}
+		.comment_list_text .author{
+			margin:10px ;
+			color: #999;
+		}
+		.replay .comment_list_text{
+			width: 650px;
+		}
+		.like{
+			height: 30px;
+			line-height: 30px;
+			margin-bottom: 10px;
+		}
+.look_more{
+	height: 44px;width: 720px;box-sizing: border-box;line-height: 44px;font-size: 16px;color: #666666;display: block;text-align: center;background-color:#f3f3f3;margin-top: 10px;
+}

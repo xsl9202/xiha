@@ -1,0 +1,76 @@
+
+		header{
+			z-index: 99;
+		}
+		form {
+			border: 1px solid #999999;
+			width: 700px;
+			margin: 0 auto;
+			margin-top: 31px;
+			position: relative;
+			margin-bottom: 100px;
+		}
+		
+		.close {
+			position: absolute;
+			right: 10px;
+			top: 20px;
+		}
+		
+		.title {
+			font-size: 30px;
+			color: #0284C8;
+			text-align: center;
+			margin-top: 46px;
+			margin-bottom: 37px;
+		}
+		
+		input {
+			display: block;
+			margin: 0 auto;
+			border: none;
+			border-bottom: 1px solid #c7c7c7;
+			margin-top: 50px;
+			width: 600px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 14px;
+		}
+		
+		.submit {
+			display: block;
+			width: 600px;
+			height: 80px;
+			line-height: 80px;
+			color: #FFFFFF;
+			background-color: #169bd5;
+			border: none;
+			border-radius: 18px;
+			font-size: 28px;
+			margin: 130px auto 65px auto;
+		}
+		
+		.quick-login {
+			width: 600px;
+			margin: 0 auto;
+			height: 20px;
+			line-height: 20px;
+		}
+		
+		.login-icon {
+			width: 600px;
+			margin: 35px auto 40px auto;
+		}
+		
+		.line {
+			height: 1px;
+			border-bottom: 1px solid #999999;
+			width: 232px;
+			display: inline-block;
+		}
+		
+		.banner img {
+			width: 100%;
+			min-width: 1200px;
+			height: auto;
+		}

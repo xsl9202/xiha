@@ -1,0 +1,62 @@
+.main-content {
+	width: 100%;
+	background-color: #fff;
+	padding-top: 140px;
+	padding-bottom: 100px;
+}
+
+.quotation_content {
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #333333;
+	height: 63px;
+	text-indent: 10px;
+	line-height: 63px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+thead {
+	background-color: #999999;
+	height: 80px;
+	line-height: 80px;
+}
+
+th {
+	font-size: 20px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+tbody tr {
+	color: #333333;
+	font-size: 18px;
+}
+
+th,
+tr {
+	width: 12.5%;
+	text-align: center;
+}
+
+tr {
+	height: 80px;
+	line-height: 80px;
+}
+
+.blue {
+	color: #00d3ec;
+}
+
+.red {
+	color: #ff0000;
+}

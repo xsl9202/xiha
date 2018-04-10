@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<title>个人信息设置</title>
+	</head>
+	<style type="text/css">
+		.main-content {
+			width: 100%;
+			background-color: #FFFFFF;
+			padding-top: 140px;
+			padding-bottom: 380px;
+		}
+		
+		.personal_content {
+			width: 1200px;
+			margin: 0 auto;
+			background-color: #f7f7f7;
+			box-sizing: border-box;
+			padding: 0 96px 230px 0;
+		}
+		
+		.content_left {
+			width: 26%;
+			float: left;
+			border-right: 10px solid #FFFFFF;
+		}
+		
+		.content_right {
+			width: 67%;
+			float: right;
+			box-sizing: border-box;
+		}
+		
+		.head-img {
+			border-radius: 50%;
+			margin-bottom: 60px;
+			margin-left: 50px;
+		}
+		
+		.news img {
+			padding: 3px;
+			width: 22px;
+			border-radius: 50%;
+			border: 1px solid #eabf3c;
+			margin-right: 3px;
+		}
+		
+		.news a {
+			display: inline-block;
+			height: 32px;
+			line-height: 32px;
+			font-size: 16px;
+			margin: 10px 20px 10px 8px;
+		}
+		
+		.setting {
+			margin-top: 80px;
+		}
+		
+		.setting li {
+			padding-left: 80px;
+			height: 46px;
+			line-height: 46px;
+			margin-bottom: 50px;
+			font-size: 20px;
+			color: #aeaeae;
+		}
+		
+		li.active {
+			background-color: #00c0ff;
+		}
+		
+		.setting li img {
+			width: 40px;
+			margin-right: 10px;
+			margin-top: 5px;
+			padding: 3px;
+			border-radius: 60%;
+			border: 1px solid #a0a0a0;
+			box-sizing: border-box;
+		}
+		
+		.form-group {
+			width: 100%;
+		}
+		
+		.form-group input.form-control {
+			display: block;
+			width: 100%;
+			height: 46px;
+			margin-bottom: 10px;
+			text-indent: 1em;
+		}
+		
+		button {
+			display: block;
+			width: 200px;
+			height: 50px;
+			margin: 0 auto;
+			border-radius: 8px;
+			background-color: #169bd5;
+			color: #FFFFFF;
+			font-size: 18px;
+			border: none;
+			margin-top: 50px;
+		}
+		
+		#account_binding ul {
+			margin-top: 80px;
+		}
+		
+		#account_binding ul li {
+			width: 100%;
+			height: 98px;
+			line-height: 98px;
+			border: 1px solid #999999;
+			position: relative;
+			margin-bottom: 12px;
+		}
+		
+		#account_binding ul li .left {
+			position: absolute;
+			left: 20px;
+		}
+		
+		#account_binding ul li .right {
+			position: absolute;
+			right: 20px;
+		}
+		
+		#account_binding span,
+		#account_binding a {
+			color: #00c0ff;
+			font-size: 18px;
+		}
+		
+		.sort {
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 100px;
+		}
+		
+		.sort a {
+			display: inline-block;
+			width: 150px;
+			height: 60px;
+			line-height: 60px;
+			font-size: 18px;
+			text-align: center;
+			color: #999999;
+		}
+		
+		.sort a.active {
+			color: #00C0FF;
+			background-color: #FFFFFF;
+		}
+		
+		.article_list li ,.video_list li{
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		
+		.article_detail,.video_detail {
+			display: block;
+			height: auto;
+			padding: 10px 20px;
+			border: 1px solid #999999;
+		}
+		
+		.article_list h3 {
+			height: 30px;
+			font-size: 18px;
+			color: #333333;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		
+		.article_list p {
+			margin-bottom: 10px;
+			line-height: 1.5em;
+			height: 40px;
+			font-size: 14px;
+			color: #666666;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			word-break: break-all;
+		}
+		
+		.del {
+			margin-top: 10px;
+			text-align: right;
+			padding-right: 20px;
+			font-size: 16px;
+			color: #999999;
+		}
+		.video_detail{
+			height: 100px;
+			box-sizing: border-box;
+		}
+		.video_detail .left{
+			width: 418px;
+			float: left;
+		}
+		.video_detail h3 {
+			height:24px;
+			font-size: 18px;
+			color: #333333;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.video_detail .right{
+			position: relative;
+			display: block;
+			float: right;
+			width: 250px;
+			height: 80px;
+			background: url(img/video-img_03.png) no-repeat;
+		}
+		.play{
+			 position: absolute;  
+             top: 0; right: 0; bottom: 0; left: 0;  
+             margin: auto;
+             padding: 8px 12px;
+             background-color: rgba(0,0,0,0.5);
+		}
+		.callout{
+			margin-top:15px;
+		}
+		.callout span{
+			color: #999999;
+			margin-right: 10px;
+		}
+		/*查看更多*/
+		.more{
+			display: block;
+			height: 38px;
+			line-height: 38px;
+			font-size: 14px;
+			color: #666666;
+			border: 1px solid #999999;
+			text-align: center;
+			
+		}
+		/*评论*/
+		.list{
+			margin-bottom: 70px;
+		}
+		.comment_list_content li{
+			margin: 30px 0;
+		}
+		.comment_list_user img{
+			display: block;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			margin-right: 20px;
+		}
+		.box{
+			float: left;
+		}
+		.replay,.self_replay{
+			height: 50px;
+			line-height: 50px;
+			font-size: 16px;
+		}
+		
+        .self_replay{
+        	background-color: #f5f5f5;
+        	text-indent: 2em;
+        	font-size: 14px;
+        }
+        .replay_btn,.del_btn{
+        	font-size: 14px;color: #999999;
+        }
+        .publish_list{
+        	padding: 10px 20px;
+        	box-sizing: border-box;
+        border: 1px solid #999999;	
+        }
+        .publist_li{
+        	margin-bottom: 20px;
+        }
+        .publish_list h4{
+        	font-size: 18px;
+        	line-height: 2em;
+        	color: #333333;
+        }
+         .publish_list p{
+        	font-size: 14px;
+        	color: #666;
+        }
+	</style>
+
+	<body>
+		<header>
+			<div class="header_logo">
+				<div class="logo">
+					<img src="img/logo.png" />
+				</div>
+				<div class="search clear">
+					<div class="search_input">
+						<input type="text" placeholder="请输入关键字" />
+					</div>
+					<a href="" class="search_img">
+						<img src="img/search.png" />
+					</a>
+				</div>
+				<div class="app_download">
+					<img src="img/phone.png" />
+					<span class="app">app下载</span>
+					<img id="app_code" class="hide" style="position: absolute;top: 22px;left: -15px;" src="img/download_code.png" alt="" class="code" />
+				</div>
+				<div class="head_img">
+					<img src="img/head-img.png" />
+					<ul class="personal_nav hide">
+						<li>
+							<a href="">我的消息</a>
+						</li>
+						<li>
+							<a href="">我的收藏</a>
+						</li>
+						<li style="border-bottom: 1px solid #FFFFFF;">
+							<a href="">个人资料</a>
+						</li>
+						<li>
+							<a href="">退出登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_nav">
+				<ul class="nav">
+					<li class="all_nav">
+						<a href=""><img src="img/nav.png" />全部导航</a>
+						<ul class="sub_nav hide">
+							<li>
+								<a href=""><img src="img/icon1_03.png" />热点新闻<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+							<li>
+								<a href=""><img src="img/icon2_03.png" />视频<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+							<li>
+								<a href=""><img src="img/icon3_03.png" />音频<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+							<li>
+								<a href=""><img src="img/icon4_03.png" />专栏<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+							<li>
+								<a href=""><img src="img/icon5_03.png" />商学院<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+								<ul class="third_nav">
+									<li>
+										<a href="">区块链漫画</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href=""><img src="img/icon6_03.png" />大咖秀<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+							<li>
+								<a href=""><img src="img/icon7_03.png" />区块链<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="news.html">新闻</a>
+					</li>
+					<li>
+						<a href="video.html">视频</a>
+					</li>
+					<li>
+						<a href="interview.html">专访</a>
+					</li>
+					<li>
+						<a href="quotation.html">行情</a>
+					</li>
+					<li>
+						<a href="">法律专栏</a>
+					</li>
+					<li>
+						<a href="business-school.html">商学院</a>
+					</li>
+					<li>
+						<a href="">投资机构</a>
+					</li>
+					<li>
+						<a href="blockchain.html">区块链研究院</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="main-content">
+			<div class="personal_content clear">
+				<div class="content_left">
+					<img class="head-img" src="img/head-img-1.png" />
+					<div class="news">
+						<a href=""><img src="img/privacy-icon1.png" />发布</a>
+						<a href=""><img src="img/privacy-icon2.png" />关注</a>
+						<a href=""><img src="img/privacy-icon3.png" />粉丝</a>
+					</div>
+					<div class="setting">
+						<ul class="setting_nav">
+							<li class="basic_information active" >
+								<a href="#basic_information"><img src="img/icon_01.png" />个人信息</a>
+							</li>
+							<li class="account_binding" >
+								<a href="#account_binding"><img src="img/icon_02.png" />账号绑定</a>
+							</li>
+							<li class="collection" >
+								<a href="#collection"><img src="img/icon_03.png" />我的收藏</a>
+							</li>
+							<li class="comment" >
+								<a href="#comment"><img src="img/icon_04.png" />我的评论</a>
+							</li>
+							<li class="publish">
+								<a href="#publish"><img src="img/icon_04.png" />我的发布</a>
+							</li>
+							<li class="privacy">
+								<a href="#privacy"><img src="img/icon_05.png" />隐私设置</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content_right">
+					<!--隐私设置-->
+					<div id="privacy" class="hide">
+						<form>
+							<div class="form-group" style="height: 20px;margin-top: 40px;font-size: 18px;">
+								<input type="checkbox"> 开启/关闭
+							</div>
+							<p style="font-size: 20px;color: #999;margin-bottom: 20px;margin-top: 20px;">个人信息隐藏</p>
+							<hr />
+							<p style="font-size: 20px;color: #00c0ff;margin-bottom: 20px;margin-top: 50px;">修改密码</p>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="请输入密码">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="请确认密码">
+							</div>
+
+							<div class="form-group">
+								<button type="submit" class="btn">确认</button>
+							</div>
+						</form>
+					</div>
+					<!--    账号绑定-->
+					<div id="account_binding" class="hide">
+						<p style="font-size: 20px;color: #00c0ff;margin-bottom: 20px;margin-top: 190px;">社交账号绑定</p>
+						<ul>
+							<li><span class="left">微信</span>
+								<a class="right" href="">立即绑定</a>
+							</li>
+							<li><span class="left">QQ</span>
+								<a class="right" href="">立即绑定</a>
+							</li>
+							<li><span class="left">微博</span>
+								<a class="right" href="">立即绑定</a>
+							</li>
+							<li><span class="left">手机号</span>
+								<a class="right" href="">立即绑定</a>
+							</li>
+						</ul>
+					</div>
+					<!--我的收藏-->
+					<div id="collection" class="hide">
+						<div class="sort">
+							<a href="#article" class="article active">文章</span>
+							<a href="#video"  class="video">视频</span>
+						</div>
+						<div>
+
+						<!--文章-->
+						<div class="article_list" id="article">
+							<ul>
+								<li>
+									<a class="article_detail" href="">
+									<h3>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务</h3>
+										<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务
+										</p>	
+									</a>
+									<div class="del">删除</div>
+								</li>
+								<li>
+									<a class="article_detail" href="">
+									<h3>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务</h3>
+										<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务
+										</p>	
+									</a>
+									<div class="del">删除</div>
+								</li>
+								<li>
+									<a class="article_detail" href="">
+									<h3>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务</h3>
+										<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务
+										</p>	
+									</a>
+									<div class="del">删除</div>
+								</li>
+								<li>
+									<a class="article_detail" href="">
+									<h3>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务</h3>
+										<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务
+										</p>	
+									</a>
+									<div class="del">删除</div>
+								</li>								
+							</ul>
+						</div>
+						<!--视频-->
+						<div class="video_list hide" id="video">
+							<ul>
+								<li>
+									<div class="video_detail">
+										<div class="left">
+										<h3>天天快递设立15亿元专项基金，激励提升服务</h3>
+										<h3>天天快递设立15亿元专项基金，激励提升服务</h3>
+										<p class="callout">
+											<span class="time">2018-3-20  15:00</span>
+											<span class="author">嘻哈财经</span>
+										</p>
+									</div>
+									<a class="right" href=""><img class="play" src="img/play-icon.png"/></a>
+									</div>
+									<div class="del">删除</div>
+								</li>
+								<li>
+									<div class="video_detail">
+										<div class="left">
+										<h3>天天快递设立15亿元专项基金，激励提升服务</h3>
+										<h3>天天快递设立15亿元专项基金，激励提升服务</h3>
+										<p class="callout">
+											<span class="time">2018-3-20  15:00</span>
+											<span class="author">嘻哈财经</span>
+										</p>
+									</div>
+									<a class="right" href=""><img class="play" src="img/play-icon.png"/></a>
+									</div>
+									<div class="del">删除</div>
+								</li>
+								<li>
+									<div class="video_detail">
+										<div class="left">
+										<h3>天天快递设立15亿元专项基金，激励提升服务</h3>
+										<h3>天天快递设立15亿元专项基金，激励提升服务</h3>
+										<p class="callout">
+											<span class="time">2018-3-20  15:00</span>
+											<span class="author">嘻哈财经</span>
+										</p>
+									</div>
+									<a class="right" href=""><img class="play" src="img/play-icon.png"/></a>
+									</div>
+									<div class="del">删除</div>
+								</li>
+								<li>
+									<div class="video_detail">
+										<div class="left">
+										<h3>天天快递设立15亿元专项基金，激励提升服务</h3>
+										<h3>天天快递设立15亿元专项基金，激励提升服务</h3>
+										<p class="callout">
+											<span class="time">2018-3-20  15:00</span>
+											<span class="author">嘻哈财经</span>
+										</p>
+									</div>
+									<a class="right" href=""><img class="play" src="img/play-icon.png"/></a>
+									</div>
+									<div class="del">删除</div>
+								</li>
+								
+							</ul>
+						</div>
+													
+						</div>
+						<a href="" class="more">查看更多</a>
+					</div>
+					<!--我的评论-->
+					<div id="comment" class="hide">
+						<ul class="comment_list">
+							<li class="list">
+								<div class="comment_list_user clear">
+									<img class="fl" src="img/head-img-1.png"/>
+								<div class="box fl">
+									<div class="nickname" style="color: #00C0FF;font-size:18px ;line-height:2em;">用户名</div>
+								    <div class="comment_time" style="color: #999;font-size:12px ;">3-3</div>
+								</div>
+								</div>
+								<ul class="comment_list_content">
+									<li >
+										<div class="replay">回复  用户名 : <span>嘻哈财经</span></div>
+										<div class="self_replay">嘻哈财经 :<span>这条评论很6666</span></div>
+										<div style="position: relative;background-color: #FFFFFF;"><a href="" class="replay_btn" style="position: absolute;left:0px;" >回复</a><a href="" class="del_btn" style="position: absolute;right:0px;">删除</a></div>
+									</li>																
+								</ul>																
+							</li>
+							
+							<li class="list">
+								<div class="comment_list_user clear">
+									<img class="fl" src="img/head-img-1.png"/>
+								<div class="box fl">
+									<div class="nickname" style="color: #00C0FF;font-size:18px ;line-height:2em;">用户名</div>
+								    <div class="comment_time" style="color: #999;font-size:12px ;">3-3</div>
+								</div>
+								</div>
+								<ul class="comment_list_content">
+									<li >
+										<div class="replay">回复  用户名 : <span>嘻哈财经</span></div>
+										<div class="self_replay">嘻哈财经 :<span>这条评论很6666</span></div>
+										<div style="position: relative;background-color: #FFFFFF;"><a href="" class="replay_btn" style="position: absolute;left:0px;" >回复</a><a href="" class="del_btn" style="position: absolute;right:0px;">删除</a></div>
+									</li>																
+								</ul>																
+							</li>
+							<li class="list">
+								<div class="comment_list_user clear">
+									<img class="fl" src="img/head-img-1.png"/>
+								<div class="box fl">
+									<div class="nickname" style="color: #00C0FF;font-size:18px ;line-height:2em;">用户名</div>
+								    <div class="comment_time" style="color: #999;font-size:12px ;">3-3</div>
+								</div>
+								</div>
+								<ul class="comment_list_content">
+									<li >
+										<div class="replay">回复  用户名 : <span>嘻哈财经</span></div>
+										<div class="self_replay">嘻哈财经 :<span>这条评论很6666</span></div>
+										<div style="position: relative;background-color: #FFFFFF;"><a href="" class="replay_btn" style="position: absolute;left:0px;" >回复</a><a href="" class="del_btn" style="position: absolute;right:0px;">删除</a></div>
+									</li>																
+								</ul>																
+							</li>
+						</ul>
+					<a href="" class="more">查看更多</a>	
+					</div>
+					<!--我的发布-->
+					<div id="publish" class="">
+						<div class="sort">
+							<a href="#wait_review" class="article active">待审核</a>
+							<a href="#pass" class="video">通过</a>
+							<a href="#not_pass" class="video">未通过</a>
+						</div>
+						<div>
+							<div id="wait_review">
+								<ul>
+									<li  class="publist_li">
+										<div class="publish_list" >
+											<h4>天天快递设立15亿元专项基金，激励提升服务</h4>
+											<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服 拷贝</p>
+									    </div>
+									    <div class="del">删除</div>
+									</li>
+									<li class="publist_li">
+										<div class="publish_list" >
+											<h4>天天快递设立15亿元专项基金，激励提升服务</h4>
+											<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服 拷贝</p>
+									    </div>
+									    <div class="del">删除</div>
+									</li>
+									<li class="publist_li">
+										<div class="publish_list" >
+											<h4>天天快递设立15亿元专项基金，激励提升服务</h4>
+											<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服 拷贝</p>
+									    </div>
+									    <div class="del">删除</div>
+									</li>
+								</ul>
+							 
+							</div >
+								<div id="pass">
+								<ul>
+									<li  class="publist_li">
+										<div class="publish_list" >
+											<h4>天天快递设立15亿元专项基金，激励提升服务</h4>
+											<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服 拷贝</p>
+									    </div>
+									    <div class="del">删除</div>
+									</li>
+									<li class="publist_li">
+										<div class="publish_list" >
+											<h4>天天快递设立15亿元专项基金，激励提升服务</h4>
+											<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服 拷贝</p>
+									    </div>
+									    <div class="del">删除</div>
+									</li>
+									<li class="publist_li">
+										<div class="publish_list" >
+											<h4>天天快递设立15亿元专项基金，激励提升服务</h4>
+											<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服 拷贝</p>
+									    </div>
+									    <div class="del">删除</div>
+									</li>
+								</ul>				 
+							</div >
+							
+								<div id="not_pass">
+								<ul>
+									<li  class="publist_li">
+										<div class="publish_list" >
+											<h4>天天快递设立15亿元专项基金，激励提升服务</h4>
+											<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服 拷贝</p>
+									   </div>
+									</li>
+									<li class="publist_li">
+										<div class="publish_list" >
+											<h4>天天快递设立15亿元专项基金，激励提升服务</h4>
+											<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服 拷贝</p>
+									   </div>
+									</li>
+									<li class="publist_li">
+										<div class="publish_list" >
+											<h4>天天快递设立15亿元专项基金，激励提升服务</h4>
+											<p>天天快递设立15亿元专项基金，激励提升服务天天快递设立15亿元专项基金，激励提升服务天天快递设立 15亿元专项基金，激励提升服 拷贝</p>
+									   </div>
+									</li>
+								</ul>
+							 
+							</div >
+						
+						</div>
+						<a href="" class="more">查看更多</a>	
+					</div>
+					<!--基本资料-->
+					<div id="basic_information" class="hide">
+						<div class="sort" style="margin-bottom: 0;margin-top: 0;text-align: left;">
+							<a class="article active">个人信息</a>
+							<a href="verified.html" class="video">实名认证</a>
+						</div>
+						<hr />
+						<form action="" method="post" style="color: #666666;">
+							<a href="" class="upload" style="position: relative;display: block;margin-bottom: 290px;">
+							<img style="width: 153px;border-radius: 50%;height:152px;display: block;margin: 0 auto;margin-top: 100px;" src="img/upload-img_03.png"/>
+							<span class="txt" style="display:block;position: absolute;top:30px;right: 0;bottom: 0;left: 0;margin: auto;background-color: #eaa63c;color: #FFFFFF;height: 28px;width: 100px;line-height: 28px;text-align: center;border-radius: 5px;">上传头像</span>
+						    </a>
+						    <div class="form-group" style="border-bottom: 1px solid #999999;margin: 30px auto;font-size: 18px;padding-bottom: 10px;">
+						    	<label for="username">昵称</label>
+						    	<div class="input" style="display: inline-block;margin-left: 30px;">
+						    		<input style="border: none;font-size: 18px;color: #666666;display: block;width: 600px;background-color: #f7f7f;" type="text" name="" id="username" value="用户名" />
+						    	</div>
+						    </div>
+						     <div class="form-group" style="border-bottom: 1px solid #999999;margin: 30px auto;font-size: 18px;padding-bottom: 10px;">
+						    	<label for="sex">性别</label>
+						    	 <div class="sex" style="display: inline-block;margin-left: 30px;">
+						        <label>
+						          <input type="radio" name="sex">男
+						          <input type="radio" name="sex" style="margin-left: 30px;">女
+						        </label>
+						      </div>
+						    </div>
+						    
+						     <div class="form-group" style="border-bottom: 1px solid #999999;margin: 30px auto;font-size: 18px;padding-bottom: 10px;">
+						    	<label for="introduction">简介</label>
+						    	<div class="input" style="display: inline-block;margin-left: 30px;">
+						    		<input style="border: none;font-size: 18px;color: #666666;display: block;width: 600px;background-color: #f7f7f;" type="text" name="" id="" value="嘻哈财经"  />
+						    	</div>
+						    </div>
+							<input style="display: block;width: 200px;height: 48px;line-height: 48px;color: #FFFFFF;background-color: #169bd5;border: none;border-radius: 8px;font-size: 18px;margin: 0 auto;" type="submit" value="保存"/>
+						</form>						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="footer_title">
+				<div class="content clear">
+					<ul class="footer-left">
+						<li>相关信息
+							<ul class="footer_sub_nav">
+								<li>
+									<a href="">关于嘻哈财经</a>
+								</li>
+								<li>
+									<a href="">使用条款</a>
+								</li>
+								<li>
+									<a href="">版权声明</a>
+								</li>
+							</ul>
+						</li>
+						<li>联系我们
+							<ul class="footer_sub_nav">
+								<li>
+									<a href="">意见反馈</a>
+								</li>
+								<li>
+									<a href="">广告投放</a>
+								</li>
+							</ul>
+						</li>
+						<li>加入我们
+							<ul class="footer_sub_nav">
+								<li>
+									<a href="">招聘专页</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="footer-right">
+						<li>
+							<a href=""><img class="code" src="img/weixin.png" /><img class="hide" style="position: absolute;top: -100px;margin-left:-50px;width: 90px;height: 100px;" src="img/weixin-code.png" /></a>
+						</li>
+						<li>
+							<a href=""><img class="code" src="img/qq.png" /></a>
+						</li>
+						<li>
+							<a href=""><img class="code" src="img/weibo.png" /><img  class="hide" style="position: absolute;top: -100px;margin-left:-50px;width: 90px;height: 100px;" src="img/weibo-code.png" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">
+				Copyright © 嘻哈财经 版权所有 粤ICP备18019367号
+			</div>
+		</footer>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>	
+		<script type="text/javascript">
+			//			鼠标经过全部导航菜单,显示子导航
+			$(".all_nav").mouseover(function() {
+				$(".sub_nav").addClass("show");
+			})
+			$(".all_nav").mouseout(function() {
+				$(".sub_nav").removeClass("show").addClass("hide");
+			})
+			//			鼠标经过头像,显示菜单
+			$(".head_img").mouseover(function() {
+				$(this).find(".personal_nav").removeClass("hide").addClass("show");
+			})
+			$(".head_img").mouseout(function() {
+				$(this).find(".personal_nav").removeClass("show").addClass("hide");
+			})
+			//			鼠标经过子导航菜单,显示三级导航
+			$(".sub_nav li").hover(function() {
+				$(this).children("ul").removeClass("hide").addClass("show");
+			})
+//			鼠标经过显示二维码
+			$(".app_download").mouseover(function() {
+				$(this).find("#app_code").removeClass("hide").addClass("show");
+			});
+			$(".app_download").mouseout(function() {
+				$(this).find("#app_code").removeClass("show").addClass("hide");
+			})
+			
+			//			鼠标经过显示二维码
+			$(".code").mouseover(function() {
+				$(this).siblings("img").removeClass("hide").addClass("show");
+			});
+			$(".code").mouseout(function() {
+				$(this).siblings("img").removeClass("show").addClass("hide");
+			})	
+			
+		
+//			点击左边的导航切换右边的内容
+$(".setting_nav li").on('click', function() {
+             var href = $(this).find("a").attr('href');
+             $(href).addClass("show").siblings().removeClass("show").addClass("hide");
+             $(this).addClass('active').siblings('li').removeClass('active');
+             return false;
+         });
+         
+         $(".sort a").on('click', function() {
+             var href = $(this).attr('href');
+             $(href).addClass("show").siblings().removeClass("show").addClass("hide");
+             $(this).addClass('active').siblings('a').removeClass('active');
+             return false;
+         });
+
+		</script>
+	</body>
+
+</html>

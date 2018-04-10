@@ -1,0 +1,75 @@
+.main-content {
+	width: 100%;
+	background: -webkit-linear-gradient(#95e9dd, #61b8fd);
+	padding-top: 180px;
+	padding-bottom: 40px;
+}
+
+.app_content {
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.section_left {
+	width: 470px;
+	height: 318px;
+}
+
+.section_right {
+	background: url(../img/phone_img.png);
+	width: 593px;
+	height: 318px;
+}
+
+.app_download_code {
+	margin-top: 140px;
+}
+
+.ios_icon {
+	background: url(../img/ios-icon.png) 15px center no-repeat;
+	display: block;
+	width: 200px;
+	height: 48px;
+	line-height: 48px;
+	box-sizing: border-box;
+	padding-left: 50px;
+	font-size: 14px;
+	background-color: #FFFFFF;
+	border-radius: 24px;
+	color: #080B0E;
+	margin-bottom: 24px;
+}
+
+.Android_icon {
+	background: url(../img/android-icon.png) 15px center no-repeat;
+	display: block;
+	width: 200px;
+	height: 48px;
+	line-height: 48px;
+	box-sizing: border-box;
+	padding-left: 58px;
+	font-size: 14px;
+	background-color: #FFFFFF;
+	border-radius: 24px;
+	color: #080B0E;
+}
+.app_text{
+	margin-right: 80px;margin-top: 140px;
+}
+h1 {
+	font-size: 40px;
+	height: 80px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 20px;
+	line-height: 2em;
+	font-weight: bold;
+}
+
+.download {
+	padding-top: 30px;
+}

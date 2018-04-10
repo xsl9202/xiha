@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<title>登录</title>
+	</head>
+	<body>
+		<header>
+			<div class="header_logo">
+				<div class="logo">
+					<img src="img/logo.png" />
+				</div>
+				<div class="search clear">
+					<div class="search_input">
+						<input type="text" placeholder="请输入关键字" />
+					</div>
+					<a href="" class="search_img">
+						<img src="img/search.png" />
+					</a>
+				</div>
+				<div class="app_download">
+					<img src="img/phone.png" />
+					<span class="app">app下载</span>
+					<img id="app_code" class="hide" src="img/download_code.png" alt="" class="code" />
+				</div>
+				<div class="head_img">
+					<img src="img/head-img.png" />
+					<ul class="personal_nav hide">
+						<li>
+							<a href="">我的消息</a>
+						</li>
+						<li>
+							<a href="">我的收藏</a>
+						</li>
+						<li style="border-bottom: 1px solid #FFFFFF;">
+							<a href="">个人资料</a>
+						</li>
+						<li>
+							<a href="">退出登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_nav">
+				<ul class="nav">
+					<li class="all_nav">
+						<a href=""><img src="img/nav.png" />全部导航</a>
+						<ul class="sub_nav hide">
+							<li>
+								<a href=""><img src="img/icon1_03.png" />热点新闻<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+							<li>
+								<a href=""><img src="img/icon2_03.png" />视频<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+							<li>
+								<a href=""><img src="img/icon3_03.png" />音频<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+							<li>
+								<a href=""><img src="img/icon4_03.png" />专栏<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+							<li>
+								<a href=""><img src="img/icon5_03.png" />商学院<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+								<ul class="third_nav">
+									<li>
+										<a href="">区块链漫画</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href=""><img src="img/icon6_03.png" />大咖秀<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+							<li>
+								<a href=""><img src="img/icon7_03.png" />区块链<img class="nav_right" src="img/nav-right.png" alt="" /></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="news.html">新闻</a>
+					</li>
+					<li>
+						<a href="video.html">视频</a>
+					</li>
+					<li>
+						<a href="interview.html">专访</a>
+					</li>
+					<li>
+						<a href="quotation.html">行情</a>
+					</li>
+					<li>
+						<a href="">法律专栏</a>
+					</li>
+					<li>
+						<a href="business-school.html">商学院</a>
+					</li>
+					<li>
+						<a href="">投资机构</a>
+					</li>
+					<li>
+						<a href="blockchain.html">区块链研究院</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="banner">
+			<img src="img/denglu.png" />
+		</div>
+		<!--注册弹窗-->
+		<form id="register" action="" method="post">
+			<div class="close" id="close"><img src="img/close-icon.png" alt="" /></div>
+			<div class="title">注册</div>
+			<hr />
+			<input type="text" name="" id="username" value="" placeholder="手机号/用户名" />
+			<input type="password" name="" id="" style="width: 450px;display: inline-block;margin-left: 52px;border: none;" value="" placeholder="输入验证码" />
+			<a href="" class="get_code" style=" display: inline-block; width:150px;text-align:right;height: 30px;line-height: 30px; font-size: 14px;color: #00C0FF;border: none;">点击获取验证码</a>
+			<hr style="width: 600px;margin: 0 auto;background-color: #c7c7c7;" />
+			<input type="password" name="" id="" value="" placeholder="输入密码（不少于6位）" />
+			<input type="password" name="" id="" value="" placeholder="确认密码（不少于6位）" />
+			<div class="form-group clear" style="width: 600px;margin: 10px auto;">
+				<div class="checkbox fl" style="display: inline-block;height: 30px;width: 300px;">
+					<input class="fl" type="checkbox" style="display: inline-block;width: 40px;margin-top: 7px;height:16px;"><span style="color: #999999;font-size: 14px;display: inline-block;height: 30px;line-height: 30px;">我已阅读并接收  <a href="" style="color: #169bd5;"> 嘻哈财经使用条款</a></span>
+				</div>
+			</div>
+			<input type="submit" class="submit" style="margin-top: 80px;" value="确认" />
+			<div class="quick-login">
+				<span class="line"></span>
+				<span style="width: 125px;text-align: center;display: inline-block;height: 20px;font-size: 18px;">快捷登录</span>
+				<span class="line"></span>
+			</div>
+			<div class="login-icon">
+				<img style="margin-left: 175px;" src="img/wexin_icon.png" />
+				<img style="margin-left: 40px;" src="img/qq_icon.png" />
+				<img style="margin-left: 40px;" src="img/weibo_icon.png" />
+			</div>
+			<a href="" class="register" style="color: #0284c8;font-size: 12px;position: absolute;bottom: 8px;right: 45px;">已有嘻哈账号？ 立即登录</a>
+		</form>
+		<!--登录弹窗-->
+		<form id="login" class="" action="" method="post">
+			<div class="close" id="close"><img src="img/close-icon.png" alt="" /></div>
+			<div class="title">登录</div>
+			<hr />
+			<input type="text" name="" id="username" value="" placeholder="手机号/用户名" />
+			<input type="password" name="" id="password" value="" placeholder="密码" />
+			<div class="form-group clear" style="width: 600px;margin: 10px auto;">
+				<div class="checkbox fl" style="display: inline-block;height: 30px;width: 300px;">
+					<input class="fl" type="checkbox" style="display: inline-block;width: 40px;margin-top: 7px;height:16px;"><span style="color: #00C0FF;font-size: 14px;display: inline-block;height: 30px;line-height: 30px;">记住密码</span>
+				</div>
+				<a href="" class="fr" style=" display: inline-block;height: 30px;line-height: 30px; font-size: 14px;color: #00C0FF;">忘记密码</a>
+			</div>
+			<input type="submit" class="submit" value="确认" />
+
+			<div class="quick-login">
+				<span class="line"></span>
+				<span style="width: 125px;text-align: center;display: inline-block;height: 20px;font-size: 18px;">快捷登录</span>
+				<span class="line"></span>
+			</div>
+			<div class="login-icon">
+				<img style="margin-left: 175px;" src="img/wexin_icon.png" />
+				<img style="margin-left: 40px;" src="img/qq_icon.png" />
+				<img style="margin-left: 40px;" src="img/weibo_icon.png" />
+			</div>
+			<a href="" class="register" style="color: #0284c8;font-size: 12px;position: absolute;bottom: 10px;right: 45px;">还没有嘻哈账号？ 立即注册</a>
+		</form>
+		<!--快捷登录-->
+		<form id="quick-login" class="" action="" method="post">
+			<a href="javascript:;" class="close"><img src="img/close-icon.png" alt="" /></a>
+			<div class="title" style="width: 370px;margin: 46px auto 27px auto;">请使用微信扫码二维码登录 “嘻哈财经”</div>
+			<img src="img/login-code.png" style="display: block;width: 352px;margin: 0 auto 63px auto;" />
+			<div class="quick-login">
+				<span class="line"></span>
+				<span style="width: 125px;text-align: center;display: inline-block;height: 20px;font-size: 18px;">快捷登录</span>
+				<span class="line"></span>
+			</div>
+			<div class="login-icon">
+				<img style="margin-left: 175px;" src="img/wexin_icon.png" />
+				<img style="margin-left: 40px;" src="img/qq_icon.png" />
+				<img style="margin-left: 40px;" src="img/weibo_icon.png" />
+			</div>
+			<a href="" class="register" style="color: #0284c8;font-size: 12px;position: absolute;bottom: 10px;right: 45px;">还没有嘻哈账号？ 立即注册</a>
+		</form>
+		<footer>
+			<div class="footer_title">
+				<div class="content clear">
+					<ul class="footer-left">
+						<li>相关信息
+							<ul class="footer_sub_nav">
+								<li>
+									<a href="about-us.html">关于嘻哈财经</a>
+								</li>
+								<li>
+									<a href="term.html">使用条款</a>
+								</li>
+								<li>
+									<a href="copyright-declaration.html">版权声明</a>
+								</li>
+							</ul>
+						</li>
+						<li>联系我们
+							<ul class="footer_sub_nav">
+								<li>
+									<a href="">意见反馈</a>
+								</li>
+								<li>
+									<a href="">广告投放</a>
+								</li>
+							</ul>
+						</li>
+						<li>加入我们
+							<ul class="footer_sub_nav">
+								<li>
+									<a href="recruitment.html">招聘专页</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="footer-right">
+						<li>
+							<a href=""><img class="code" src="img/weixin.png" /><img class="weixin_code_img hide"  src="img/weixin-code.png" /></a>
+						</li>
+						<li>
+							<a href=""><img class="code" src="img/qq.png" /></a>
+						</li>
+						<li>
+							<a href=""><img class="code" src="img/weibo.png" /><img class="weixin_code_img hide"  src="img/weibo-code.png" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">
+				Copyright © 嘻哈财经 版权所有 粤ICP备18019367号
+			</div>
+		</footer>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//			关闭登录窗口
+			$(".close").click(function() {
+				$(this).parent("form").removeClass("show");
+				$(this).parent("form").addClass("hide");
+			})
+			//点击快捷登录弹窗二维码
+			$(".login-icon img").click(function() {
+				$(this).parents("form").addClass("hide");
+				$("#quick-login").addClass("show");
+			})
+		</script>
+	</body>
+
+</html>

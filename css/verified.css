@@ -1,0 +1,97 @@
+.main-content {
+			width: 100%;
+			background-color: #FFFFFF;
+			padding-top: 140px;
+			padding-bottom: 100px;
+		}
+		
+		.verified_content {
+			width: 1200px;
+			margin: 0 auto;
+			background-color: #f7f7f7;
+			box-sizing: border-box;
+		}
+		
+		h1 {
+			font-size: 30px;
+			font-weight: bold;
+			height: 90px;
+			line-height: 90px;
+		}
+		
+		hr {
+			background-color: #dddddd;
+			height: 1px;
+			border: none;
+		}
+		
+		.content_box {
+			width: 1000px;
+			margin: 0 auto;
+		}
+		
+		.col {
+			display: inline-block;
+			position: relative;
+			width: 850px;
+			height: 70px;
+		}
+		
+		.col input {
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			text-indent: 1em;
+			border: 1px solid #dddddd;
+		}
+		
+		.col span {
+			position: absolute;
+			top: 60px;
+		}
+		
+		.prompt {
+			color: #e06565;
+		}
+		
+		.form-group {
+			margin-bottom: 28px;
+		}
+		
+		label {
+			display: inline-block;
+			width: 140px;
+			text-align: center;
+			height: 50px;
+			line-height: 50px;
+			font-size: 16px;
+			color: #666666;
+		}
+		
+		.img_wp {
+			position: relative;
+			width: 50%;
+		}
+		
+		.img_wp img {
+			width: 300px;
+			height: 200px;
+			border: 1px solid #DDDDDD;
+		}
+		
+		.img_intro {
+			color: #383838;
+			text-align: center;
+			font-family: "微软雅黑";
+			padding: 10px 0 10px 0;
+		}
+		
+		.cf {
+			clear: both;
+		}
+		.submit_btn{
+			display: block;width: 200px;height: 48px;line-height: 48px;color: #FFFFFF;background-color: #169bd5;border: none;border-radius: 8px;font-size: 18px;margin: 30px auto 38px auto;
+		}
+		.line{
+			border: 2px solid #DDDDDD;
+		}

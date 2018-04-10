@@ -1,0 +1,257 @@
+.main-content {
+	width: 100%;
+	padding-top: 160px;
+	padding-bottom: 100px;
+}
+
+.title_txt {
+	position: absolute;
+	bottom: 0;
+	width: 190px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #9d9d9d;
+	text-indent: 20px;
+}
+
+.video_content {
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.hot_broadcast_left {
+	width: 390px;
+}
+
+.get_more {
+	color: #ef3421;
+	font-size: 12px;
+	height: 26px;
+	line-height: 26px;
+	display: inline-block;
+}
+
+.hot_broadcast_img {
+	margin-right: 10px;
+}
+.hot_broadcast_right{
+	width: 438px;margin-left: 10px;
+}
+.hot_broadcast_right_img{
+	width: 139px;height: 98px;position: relative;margin-top:5px;margin-bottom: 5px;margin-right: 10px;
+}
+.hot_broadcast_right_img img{
+	width: 139px;height:98px;
+}
+.broadcast_right_text{
+	position: absolute;bottom: 0;width:139px;height: 20px;line-height: 20px;font-size: 12px;color: #333;background-color: #9d9d9d;text-indent: 20px;
+}
+.sort_list .title{
+	margin-top: 36px;border-bottom:1px solid #2483f0;
+}
+.sort_list .title a{
+	color: #2483f0;font-size: 12px;height: 26px;line-height: 26px;display: inline-block;
+}
+.sort_text{
+	margin-left:50px; color: #666;font-size: 12px;
+}
+.sort_list .hot_broadcast_right_img{
+	width: 230px;height: 160px;position: relative;margin-top:5px;margin-bottom: 5px;margin-right: 10px;
+}
+.sort_list .hot_broadcast_right_img img{
+	width: 230px;height:160px;
+}
+.sort_list_text{
+	position: absolute;bottom: 0;width:230px;height: 20px;line-height: 20px;font-size: 12px;color: #333;background-color: #9d9d9d;text-indent: 20px;
+}
+
+.title_icon{
+	font-size: 20px;color: #2483f0;margin-right: 10px;
+}
+.hot_broadcast_left_img {
+	width: 190px;
+	height: 102px;
+	position: relative;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+.hot_broadcast_left_img:nth-of-type(2n){
+		margin-right: 0px;
+}
+.hot_broadcast_left_img img {
+	width: 190px;
+	height: 102px;
+}
+
+.sidebar_img {
+	width: 248px;
+	height: 115px;
+}
+
+.sidebar_btn_img {
+	width: 36px;
+	height: 36px;
+}
+
+.main_video {
+	display: inline-block;
+	position: relative;
+	width: 942px;
+	height: 490px;
+}
+
+.main_video_img {
+	width: 942px;
+	height: 490px;
+}
+
+.main_video a {
+	display: block;
+	width: 152px;
+	height: 152px;
+}
+
+.main_video a img {
+	width: 153px;
+	height: 152px;
+}
+
+.sidebar {
+	position: relative;
+	display: inline-block;
+	width: 248px;
+	height: 115px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.sidebar a {
+	display: block;
+	width: 36px;
+	height: 36px;
+}
+
+.title {
+	border-bottom: 1px solid #e88e4c;
+	padding-bottom: 5px;
+}
+
+/*.title span {
+	color: #ef3421;
+}*/
+
+.hot_broadcast h3 {
+	font-size: 16px;
+	line-height: 30px;
+	height: 30px;
+	text-indent: 10px;
+	/*只显示一行文字*/
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.title_text {
+	font-size: 20px;
+	color: #ef3421;
+	margin-right: 10px;
+}
+
+.hot_broadcast a.hot_broadcast_text {
+	display: block;
+	margin: 5px auto;
+	color: #666666;
+	font-size: 14px;
+}
+
+.row {
+	width: 400px;
+	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #333333;
+	border-right: 0;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+.row:nth-of-type(3) {
+	border-right: 1px solid #333333;
+}
+
+.row h3 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+.hot_broadcast_text{
+	margin-right: 10px;
+}
+.left_btn {
+	position: absolute;
+	top: 80px;
+	left: 0;
+}
+
+.center_btn {
+	width: 53px;
+	height: 44px;
+}
+
+.right_btn {
+	position: absolute;
+	top: 80px;
+	right: 0;
+}
+
+.center_text {
+	position: absolute;
+	bottom: 0;
+	width: 350px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: #050001;
+	text-indent: 20px;
+}
+
+.hot_broadcast_center {
+	width: 350px;
+	margin-left: 10px;
+}
+
+.hot_broadcast_center_img {
+	position: relative;
+	width: 350px;
+	height: 200px;
+}
+
+.center_img {
+	width: 350px;
+	height: 200px;
+}
+
+.blockchain_more {
+	height: 44px;
+	width: 1200px;
+	box-sizing: border-box;
+	line-height: 44px;
+	font-size: 16px;
+	color: #666666;
+	display: block;
+	text-align: center;
+	border: 1px solid #DDDDDD;
+	margin: 10px 0;
+}
+
+.advertising {
+	width: 1200px;
+	height: 200px;
+	border: 1px solid #DDDDDD;
+	margin: 10px auto;
+}
